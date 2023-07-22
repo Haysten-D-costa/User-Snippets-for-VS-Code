@@ -44,5 +44,50 @@
 			"$2"
 		],
 		"description": "This is a bubble sort function template, for C Programming..."
+	},
+	"SELECTION_SORT(C++)": { //! SELECTION SORT snippet(C++)...
+		"scope": "cpp",
+		"prefix": "sort",
+		"body": [
+			"int* selectionSort(int* A, int n)",
+			"{",
+			"\tfor(size_t i{0}; i<n-1; i++) {",
+			"\t\tfor(size_t j{i+1}; j<n; j++) {",
+			"\t\t\tif(A[j] < A[i])",
+			"\t\t\t{",
+			"\t\t\t\tint temp = A[j];",
+			"\t\t\t\tA[j] = A[i];",
+			"\t\t\t\tA[i] = temp;",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"\treturn A;",
+			"}",
+			"$2"
+		],
+		"description": "This is a selection sort function template, for C++ Programming..."
+	},
+	"SELECTION_SORT(C)": { //! SELECTION SORT snippet(C)...
+		"scope": "c",
+		"prefix": "sort",
+		"body": [
+			"int* selectionSort(int* A, int n)",
+			"{",
+			"\tint i, j, temp;",
+			"\tfor(i=0; i<n-1; i++) {",
+			"\t\tfor(j=i+1; j<n; j++) {",
+			"\t\t\tif(A[j] < A[i])",
+			"\t\t\t{",
+			"\t\t\t\ttemp = A[j];",
+			"\t\t\t\tA[j] = A[i];",
+			"\t\t\t\tA[i] = temp;",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"\treturn A;",
+			"}",
+			"$2"
+		],
+		"description": "This is a selection sort function template, for C Programming..."
 	}
 }
