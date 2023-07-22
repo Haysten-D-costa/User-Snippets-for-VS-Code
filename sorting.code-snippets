@@ -89,5 +89,52 @@
 			"$2"
 		],
 		"description": "This is a selection sort function template, for C Programming..."
+	},
+	"INSERTION_SORT(C++)": { //! SELECTION SORT snippet(C)...
+		"scope": "cpp",
+		"prefix": "sort",
+		"body": [
+			"int* insertionSort(int* A, int n)",
+			"{",
+			"\tfor(int i=1; i<n; i++)",
+			"\t{",
+			"\t\tint current = A[i];",
+			"\t\tint j = i-1;",
+			"\t\twhile((A[j] > current) && (j>=0))",
+			"\t\t{",
+			"\t\t\tA[j+1] = A[j];",
+			"\t\t\tj--;",
+			"\t\t}",
+			"\t\tA[j+1] = current;",
+			"\t}",
+			"\treturn A;",
+			"}",
+			"$2"
+		],
+		"description": "This is a insertion sort function template, for C++ Programming..."
+	},
+	"INSERTION_SORT(C)": { //! SELECTION SORT snippet(C)...
+		"scope": "c",
+		"prefix": "sort",
+		"body": [
+			"int* insertionSort(int* A, int n)",
+			"{",
+			"\tint i, j, current;",
+			"\tfor(i=1; i<n; i++)",
+			"\t{",
+			"\t\tcurrent = A[i];",
+			"\t\tj = i-1;",
+			"\t\twhile((A[j] > current) && (j>=0))",
+			"\t\t{",
+			"\t\t\tA[j+1] = A[j];",
+			"\t\t\tj--;",
+			"\t\t}",
+			"\t\tA[j+1] = current;",
+			"\t}",
+			"\treturn A;",
+			"}",
+			"$2"
+		],
+		"description": "This is a insertion sort function template, for C Programming..."
 	}
 }
